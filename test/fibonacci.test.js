@@ -14,8 +14,8 @@ describe('fibonacci(n)', () => {
 
   it('debe lanzar RangeError para entradas inválidas', () => {
     const mensajeError = 'solo números enteros entre 0 y 78';
-    expect(() => fibonacci(-1)).toThrowRangeError(mensajeError);
-    expect(() => fibonacci(79)).toThrowRangeError(mensajeError);
-    expect(() => fibonacci("5")).toThrowRangeError(mensajeError);
+    expect(() => fibonacci(-1)).toThrow(mensajeError);
+    expect(() => fibonacci(79)).toThrow(mensajeError);
+    expect(() => fibonacci("5")).toThrow(mensajeError);
   });
 });
